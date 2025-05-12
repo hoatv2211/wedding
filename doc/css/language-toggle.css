@@ -1,0 +1,49 @@
+/* Language Toggle Button Styles */
+.language-toggle-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.language-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #DBA858;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    animation: pulse-button 2s infinite;
+}
+
+.language-toggle:hover {
+    background-color: #5E5E5E;
+    transform: scale(1.05);
+}
+
+@keyframes pulse-button {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .language-toggle-container {
+        top: 60px; /* Di chuyển xuống dưới để không che logo H&N */
+        left: 15px;
+    }
+    
+    .language-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,89 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  .count-item {
+    text-align: center;
+    span { font-size: 2.5rem; display: block; }
+    small { display: block; font-size: 0.75rem; color: #666; }
+  }
+}
+
+.vi { display: block; }
+.en { display: block; color: #888; font-style: italic; margin-top: 0.25rem; }
+
+
+/* sass/_custom.scss */
+/* sass/_custom.scss */
+
+// Container giữ nút cố định ở góc phải trên
+.lang-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+// Nút switch hiển thị text VN/EN trong vòng tròn nổi bật
+.lang-toggle {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid #d4af37;      /* Viền vàng nổi bật */
+  border-radius: 50%;             /* Hình tròn */
+  background-color: #000;         /* Nền đen */
+  color: #d4af37;                 /* Text vàng */
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+// Khi active (chuyển ngôn ngữ), có thể xoay nút hoặc đổi hiệu ứng
+.lang-toggle.active {
+  transform: rotate(180deg);
+}
+
+// Hiệu ứng hover
+.lang-toggle:hover {
+  background-color: #111;
+}
+
+/* SCSS thêm vào file custom của bạn */
+.invite-section {
+  .invite-label {
+    .role {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      margin-top: 0.25rem;
+    }
+  }
+
+  .invite-photo {
+    img {
+      max-width: 300px;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  }
+
+  .invite-text {
+    .line {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      margin: 0.25rem 0;
+    }
+  }
+}
