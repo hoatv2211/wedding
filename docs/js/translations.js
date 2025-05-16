@@ -225,7 +225,7 @@ const translations = {
         "love-confession-title": "Tỏ Tình",
         "love-confession-date": "20 Tháng 10, 2023",
         "love-confession-description":
-            'Tại "Tui Mơ Tớ", anh đã bày tỏ tình cảm. Hành trình của chúng tôi nhẹ nhàng, vững vàng—không bao giờ bị lung lay bởi khó khăn, luôn tiến về phía trước cùng nhau.',
+            'Tại "Tui Mơ To", anh đã bày tỏ tình cảm. Hành trình của chúng tôi nhẹ nhàng, vững vàng—không bao giờ bị lung lay bởi khó khăn, luôn tiến về phía trước cùng nhau.',
 
         "proposal-title": "Cầu Hôn",
         "proposal-date": "13 Tháng 4, 2025",
@@ -335,7 +335,7 @@ const translations = {
 };
 
 // Set default language
-let currentLanguage = localStorage.getItem("wedding-lang") || "en";
+let currentLanguage = localStorage.getItem("wedding-lang") || "vi";
 
 // Function to change the language
 function changeLanguage(lang) {
